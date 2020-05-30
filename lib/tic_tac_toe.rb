@@ -95,6 +95,10 @@ end
   end 
   
   def over?
+    won? || full? || draw?
+  end 
+  
+  def winner
     
   end 
   
