@@ -76,7 +76,14 @@ end
   end
   
   def won?
-    
+    WIN_COMBINATIONS.detect do |win_comb|
+    if (@board[win_comb[0]]) == "X" && (@board[win_comb[1]]) == "X" && (@board[win_comb[2]]) == "X"
+      return win_comb
+    elsif (@board[win_comb[0]]) == "O" && (@board[win_comb[1]]) == "O" && (@board[win_comb[2]]) == "O"
+      return win_comb
+    end
+      false
+    end
   end 
   
 end
