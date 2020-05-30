@@ -86,4 +86,8 @@ end
     end
   end 
   
+  def full?
+    
+  end 
+  
 end
